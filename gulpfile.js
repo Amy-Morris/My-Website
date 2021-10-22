@@ -26,12 +26,14 @@ const banner = ['/*!\n',
 ].join('');
 
 // BrowserSync
+// Use 4000 for port
+// 3000 is used for mock server
 function browserSync(done) {
   browsersync.init({
     server: {
       baseDir: "./"
     },
-    port: 3000
+    port: 4000
   });
   done();
 }
